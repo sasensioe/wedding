@@ -1,4 +1,3 @@
-
 const DATE_TARGET = new Date('09/07/2024');
 // DOM for render
 const SPAN_DAYS = document.querySelector('#days');
