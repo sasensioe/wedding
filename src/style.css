@@ -18,7 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-image: url('assets/circle-2.png');
+    background-image: url('../assets/circle-2.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -39,7 +39,7 @@ body {
 
 @font-face {
     font-family: 'OldLondon';
-    src: url('assets/OldLondon.ttf') format('truetype');
+    src: url('../assets/OldLondon.ttf') format('truetype');
 }  
 
 .color-1{
@@ -90,7 +90,7 @@ body {
 
 #ceremony-container{
     background-color: antiquewhite;
-    background-image: url('assets/bg-4.jpg');
+    background-image: url('../assets/bg-4.jpg');
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -99,7 +99,7 @@ body {
 
 #celebration-container{
     background-color: #a19467;
-    background-image: url('assets/bg-5.png');
+    background-image: url('../assets/bg-5.png');
     background-position: center;
     background-size: cover;
     height: 100vh;

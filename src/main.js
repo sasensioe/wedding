@@ -1,4 +1,3 @@
-import './style.css'
 
 const DATE_TARGET = new Date('09/07/2024');
 // DOM for render
