@@ -20,9 +20,9 @@ function updateCountdown() {
     const REMAINING_MINUTES = Math.floor((DURATION % MILLISECONDS_OF_A_HOUR) / MILLISECONDS_OF_A_MINUTE);
 
     // Render
-    SPAN_DAYS!.textContent = REMAINING_DAYS.toString();
-    SPAN_HOURS!.textContent = REMAINING_HOURS.toString();
-    SPAN_MINUTES!.textContent = REMAINING_MINUTES.toString();
+    SPAN_DAYS.textContent = REMAINING_DAYS.toString();
+    SPAN_HOURS.textContent = REMAINING_HOURS.toString();
+    SPAN_MINUTES.textContent = REMAINING_MINUTES.toString();
 }
 
 //===
