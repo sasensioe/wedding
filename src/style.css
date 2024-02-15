@@ -1,0 +1,184 @@
+body {
+    font-family: 'Lora', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#main-container{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff8f4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;   
+}
+
+#main-title{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: url('assets/circle-2.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50%;
+    color: #cba35b;
+}
+
+#main-title h1{
+    font-size: 5em;
+    margin-left: -0.5em;
+}
+
+#date{
+    height: 10em;
+    background-color: #F4D6C1;
+    font-family: 'Lora';
+}
+
+@font-face {
+    font-family: 'OldLondon';
+    src: url('assets/OldLondon.ttf') format('truetype');
+}  
+
+.color-1{
+    color: #F4D6C1;
+}
+
+.color-2{
+    color: #cba35b;
+}
+
+.color-3{
+    color: #a19467;
+}
+
+.color-4{
+    color: #475b5c;
+}
+
+.color-5{
+    color: #ba4040;
+}
+
+.bg-color-1{
+    background-color: #F4D6C1;
+    color: #9c8a7e;
+}
+
+.bg-color-2{
+    background-color: #cba35b;
+    color: #9d7d42;
+}
+
+.bg-color-3{
+    background-color: #a19467;
+}
+
+.font-1{
+    font-family: 'Lora';
+}
+
+.font-2{
+    font-family: 'Great Vibes';
+}
+
+.font-3{
+    font-family: 'OldLondon';
+}
+
+#ceremony-container{
+    background-color: antiquewhite;
+    background-image: url('assets/bg-4.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+#celebration-container{
+    background-color: #a19467;
+    background-image: url('assets/bg-5.png');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+}
+
+#poem-container{
+    background-color: #fef1e9;
+    font-style: italic;
+    font-size: large;
+    line-height: 2.5em;
+}
+
+.poem-quote{
+    font-size: x-large;
+}
+
+#clock-container{
+    background-color: #ffeadc;
+}
+
+.clock-item{
+    background-color: #fff;
+    aspect-ratio: 1/1;
+    border-radius: 20px;
+    font-family: 'Great Vibes';
+}
+
+.clock-item-number{
+    font-size: 2em;
+}
+
+.clock-item-label{
+    width: 6em;
+    font-family: 'Lora';
+    margin-top: 1em;
+}
+
+.stepper-container{
+    background-color: #fffbfa;
+}
+
+.stepper-item{
+    min-height: 5em;
+    margin: 2em auto;
+}
+
+.stepper-icon{
+    background-color: #f7e4d6;
+    border-radius: 50%;
+    width: 3em;
+    aspect-ratio: 1/1;
+    z-index: 2;
+}
+
+.stepper-description{
+    font-size: 1.5em;
+}
+
+#stepper-container{
+    position: relative;
+}
+
+.stepper-line{
+    left: 43px;
+    top: 25px;
+    width: 10px;
+    height: calc(100% - 50px);
+    background-color: #f7e4d6;
+    position: absolute;
+    margin: auto;
+}
+
+.button{
+    border-radius: 50px;
+    border: none;
+    padding: 0.5em 2em;
+}
+
+.modal-content{
+    border-radius: 20px;
+}
