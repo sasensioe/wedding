@@ -32,7 +32,6 @@ body {
 }
 
 #date{
-    height: 10em;
     background-color: #F4D6C1;
     font-family: 'Lora';
 }
@@ -93,7 +92,7 @@ body {
     background-image: url('../assets/bg-good.png');
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
 
 }
 
@@ -102,7 +101,7 @@ body {
     background-image: url('../assets/bg-5.png');
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     color: #fff;
 }
 
