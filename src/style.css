@@ -18,7 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-image: url('../assets/circle-2.png');
+    background-image: url('../assets/circle-dragons.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -89,7 +89,7 @@ body {
 
 #ceremony-container{
     background-color: #fff;
-    background-image: url('../assets/bg-good.png');
+    background-image: url('../assets/bg-ceremony.png');
     background-position: center;
     background-size: cover;
     min-height: 100vh;
@@ -98,7 +98,7 @@ body {
 
 #celebration-container{
     background-color: #75866b;
-    background-image: url('../assets/bg-5.png');
+    background-image: url('../assets/bg-celebration.png');
     background-position: center;
     background-size: cover;
     min-height: 100vh;
@@ -108,7 +108,7 @@ body {
 #poem-container{
     background-color: #fef1e9;
     font-style: italic;
-    font-size: large;
+    font-size: medium;
     line-height: 2.5em;
 }
 
