@@ -185,3 +185,8 @@ body {
 .modal-content{
     border-radius: 20px;
 }
+
+#thanks-container{
+    background-color: #f6f6f6;
+    color: #75866b
+}
