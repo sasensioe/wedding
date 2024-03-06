@@ -30,6 +30,7 @@ updateCountdown();
 // Refresh every second
 setInterval(updateCountdown, MILLISECONDS_OF_A_SECOND);
 
+const mainContainer = document.getElementById('main-container');
 const poemContainer = document.getElementById('poem-container');
 const clockContainer = document.getElementById('clock-container');
 const ceremonyContainer = document.getElementById('ceremony-container');
@@ -88,4 +89,20 @@ onscroll = (event) => {
 };
 
 const audio = new Audio("assets/audio/wedding.mp3");
-audio.play();
+if(window.confirm("Esta página contiene música, ¿Quiere reproducirla?")){
+    audio.play()
+    init()
+}else{
+    init()
+}
+
+// init()
+
+function init(){
+    document.getElementById('main-date').classList.add('animate__animated', 'animate__fadeInUp', 'animate__delay-1s')
+    document.getElementById('main-date').classList.remove('opacity-0')
+    document.getElementById('main-title').classList.add('animate__animated', 'animate__fadeIn', 'animate__slower')
+    document.getElementById('main-title').classList.remove('opacity-0')
+    document.getElementById('main-edict').classList.add('animate__animated', 'animate__fadeIn', 'animate__delay-2s')
+    document.getElementById('main-edict').classList.remove('opacity-0')
+}
