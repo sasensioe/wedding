@@ -29,3 +29,63 @@ function updateCountdown() {
 updateCountdown();
 // Refresh every second
 setInterval(updateCountdown, MILLISECONDS_OF_A_SECOND);
+
+const poemContainer = document.getElementById('poem-container');
+const clockContainer = document.getElementById('clock-container');
+const ceremonyContainer = document.getElementById('ceremony-container');
+const celebrationContainer = document.getElementById('celebration-container');
+const stepperContainer = document.getElementById('stepper-container');
+
+onscroll = (event) => {
+    const scrollHeight = window.scrollY + window.innerHeight;
+    if(poemContainer.offsetTop + (poemContainer.clientHeight /2) < scrollHeight){
+        document.getElementById('poem-animated').classList.add('animate__animated', 'animate__fadeIn')
+        document.getElementById('poem-animated').classList.remove('opacity-0')
+    }
+    if(clockContainer.offsetTop + (clockContainer.clientHeight /2) < scrollHeight){
+        for(let i = 1; i <= 3;i++){
+            document.getElementsByClassName(`clock-item-${i}`).item(0).classList.add('animate__animated', 'animate__fadeIn', `animate__delay-${i-1}s`)
+            document.getElementsByClassName(`clock-item-${i}`).item(0).classList.remove('opacity-0')
+            document.getElementsByClassName(`clock-item-${i}`).item(1).classList.add('animate__animated', 'animate__fadeInDown', `animate__delay-${i+2}s`)
+            document.getElementsByClassName(`clock-item-${i}`).item(1).classList.remove('opacity-0')
+        }
+    }
+    if(ceremonyContainer.offsetTop + (ceremonyContainer.clientHeight /2) < scrollHeight){
+        document.getElementById('ceremony-img').classList.add('animate__animated', 'animate__fadeIn')
+        document.getElementById('ceremony-title').classList.add('animate__animated', 'animate__fadeIn', 'animate__delay-1s')
+        document.getElementById('ceremony-place').classList.add('animate__animated', 'animate__fadeIn', 'animate__delay-2s')
+        document.getElementById('ceremony-address').classList.add('animate__animated', 'animate__fadeIn', 'animate__delay-3s')
+        document.getElementById('ceremony-date').classList.add('animate__animated', 'animate__fadeIn', 'animate__delay-4s')
+        document.getElementById('ceremony-maps').classList.add('animate__animated', 'animate__fadeIn', 'animate__delay-5s')
+        document.getElementById('ceremony-img').classList.remove('opacity-0')
+        document.getElementById('ceremony-title').classList.remove('opacity-0')
+        document.getElementById('ceremony-place').classList.remove('opacity-0')
+        document.getElementById('ceremony-address').classList.remove('opacity-0')
+        document.getElementById('ceremony-date').classList.remove('opacity-0')
+        document.getElementById('ceremony-maps').classList.remove('opacity-0')
+    }
+
+    if(celebrationContainer.offsetTop + (celebrationContainer.clientHeight /2) < scrollHeight){
+        document.getElementById('celebration-img').classList.add('animate__animated', 'animate__fadeIn')
+        document.getElementById('celebration-title').classList.add('animate__animated', 'animate__fadeIn', 'animate__delay-1s')
+        document.getElementById('celebration-place').classList.add('animate__animated', 'animate__fadeIn', 'animate__delay-2s')
+        document.getElementById('celebration-address').classList.add('animate__animated', 'animate__fadeIn', 'animate__delay-3s')
+        document.getElementById('celebration-date').classList.add('animate__animated', 'animate__fadeIn', 'animate__delay-4s')
+        document.getElementById('celebration-maps').classList.add('animate__animated', 'animate__fadeIn', 'animate__delay-5s')
+        document.getElementById('celebration-img').classList.remove('opacity-0')
+        document.getElementById('celebration-title').classList.remove('opacity-0')
+        document.getElementById('celebration-place').classList.remove('opacity-0')
+        document.getElementById('celebration-address').classList.remove('opacity-0')
+        document.getElementById('celebration-date').classList.remove('opacity-0')
+        document.getElementById('celebration-maps').classList.remove('opacity-0')
+    }
+
+    if(stepperContainer.offsetTop + (stepperContainer.clientHeight /2) < scrollHeight){
+        document.getElementById('stepper').classList.add('animate__animated', 'animate__fadeIn')
+        document.getElementById('stepper').classList.remove('opacity-0')
+    }
+
+};
+
+const audio = new Audio("assets/audio/wedding.mp3");
+audio.play();
