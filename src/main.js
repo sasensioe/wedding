@@ -88,13 +88,12 @@ onscroll = (event) => {
 
 };
 
+init()
+
 const audio = new Audio("assets/audio/wedding.mp3");
-if(window.confirm("Esta página contiene música, ¿Quiere reproducirla?")){
+document.getElementById('main-play').onclick = (ev => {
     audio.play()
-    init()
-}else{
-    init()
-}
+})
 
 // init()
 
