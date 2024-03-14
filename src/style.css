@@ -15,9 +15,9 @@ body {
 }
 
 #main-play{
-    position: fixed;
+    /* position: fixed;
     top: 1em;
-    right: 1em;
+    right: 1em; */
     height: 2em;
     cursor: pointer;
     filter: brightness(0) saturate(80%) invert(88%) sepia(18%) saturate(200%) hue-rotate(331deg) brightness(99%) contrast(40%);

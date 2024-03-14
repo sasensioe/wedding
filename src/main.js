@@ -90,18 +90,32 @@ onscroll = (event) => {
 
 init()
 
+let playing = false;
+
 const audio = new Audio("assets/audio/wedding.mp3");
-document.getElementById('main-play').onclick = (ev => {
-    audio.play()
+const audioElement = document.getElementById('main-play')
+
+audio.autoplay = false;
+
+audioElement.onclick = (ev => {
+    if(playing){
+        audio.pause();
+    }else{
+        audio.play()
+    }
+    audioElement.src = `assets/icons/${playing ? 'play' : 'pause'}.svg`;
+    playing = !playing;
 })
 
 // init()
 
 function init(){
-    document.getElementById('main-date').classList.add('animate__animated', 'animate__fadeInUp', 'animate__delay-1s')
-    document.getElementById('main-date').classList.remove('opacity-0')
     document.getElementById('main-title').classList.add('animate__animated', 'animate__fadeIn', 'animate__slower')
     document.getElementById('main-title').classList.remove('opacity-0')
-    document.getElementById('main-edict').classList.add('animate__animated', 'animate__fadeIn', 'animate__delay-2s')
+    document.getElementById('main-play').classList.add('animate__animated', 'animate__fadeIn', 'animate__delay-1s')
+    document.getElementById('main-play').classList.remove('opacity-0')
+    document.getElementById('main-date').classList.add('animate__animated', 'animate__fadeInUp', 'animate__delay-2s')
+    document.getElementById('main-date').classList.remove('opacity-0')
+    document.getElementById('main-edict').classList.add('animate__animated', 'animate__fadeIn', 'animate__delay-3s')
     document.getElementById('main-edict').classList.remove('opacity-0')
 }
