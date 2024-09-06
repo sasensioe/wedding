@@ -1,4 +1,7 @@
 const DATE_TARGET = new Date('09/07/2024');
+
+DATE_TARGET.setHours(12, 30)
+
 // DOM for render
 const SPAN_DAYS = document.querySelector('#days');
 const SPAN_HOURS = document.querySelector('#hours');
@@ -18,9 +21,9 @@ function updateCountdown() {
     const REMAINING_MINUTES = Math.floor((DURATION % MILLISECONDS_OF_A_HOUR) / MILLISECONDS_OF_A_MINUTE);
 
     // Render
-    SPAN_DAYS.textContent = REMAINING_DAYS.toString();
-    SPAN_HOURS.textContent = REMAINING_HOURS.toString();
-    SPAN_MINUTES.textContent = REMAINING_MINUTES.toString();
+    SPAN_DAYS.textContent = REMAINING_DAYS < 0 ? 0 : REMAINING_DAYS.toString();
+    SPAN_HOURS.textContent = REMAINING_HOURS < 0 ? 0 : REMAINING_HOURS.toString();
+    SPAN_MINUTES.textContent = REMAINING_MINUTES < 0 ? 0 : REMAINING_MINUTES.toString();
 }
 
 //===
